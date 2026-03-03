@@ -234,14 +234,8 @@ filterBtns.forEach(btn => {
 contactForm?.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Here you would typically send the data to a server
-    console.log('Form submitted:', data);
-    
     // Show success message
-    alert('Thank you for your message! I will get back to you soon.');
+    alert('Too lazy to configure this. Can you just send me an email?');
     contactForm.reset();
 });
 
