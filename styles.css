@@ -381,10 +381,12 @@ button {
 .hero-content {
     max-width: var(--container-width);
     margin: 0 auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
+    text-align: center;
     position: relative;
     z-index: 1;
 }
@@ -429,6 +431,7 @@ button {
 .typing-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
     margin-bottom: 20px;
     height: 40px;
@@ -458,13 +461,14 @@ button {
     font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 30px;
-    max-width: 500px;
+    max-width: 800px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 20px;
     margin-bottom: 50px;
+    justify-content: center;
 }
 
 .hero-stats {
